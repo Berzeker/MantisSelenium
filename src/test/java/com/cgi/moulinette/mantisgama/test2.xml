@@ -1,0 +1,599 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/gdfsuez.css" />
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma-directive" content="no-cache" />
+	<meta http-equiv="Cache-Directive" content="no-cache" />
+	<meta http-equiv="Expires" content="Wed, 18 Jan 2017 17:05:35 GMT" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />	<title>0021208: [PAIEMENT CB] - JDD - Mantis DI</title>
+	<script type="text/javascript" language="JavaScript" src="javascript/common.js"></script>
+	<script type="text/JavaScript" src="javascript/ajax.js"></script>
+</head>
+<body>
+<div class="center"><span class="pagetitle">Mantis DI</span></div>
+
+ <STYLE type="text/css">
+.header_logo a, .header_logo a:visited, .header_logo a:link, .header_logo a:hover, .header_logo a img {
+color:#169283;
+font-size:40px;
+font-weight:800;
+padding:0;
+text-decoration:none;
+vertical-align:middle;
+}
+td, th {
+color:#333333;
+}
+td {
+display:table-cell;
+padding:1px;
+text-align:inherit;
+vertical-align:inherit;
+}
+table {
+border-collapse:separate;
+border-spacing:2px;
+text-indent:0;
+}
+#header {
+color:#FFF7F0;
+}
+
+</STYLE>
+ 
+<div id="header_menu_mantis" style="display:none">
+	<div id="wrapper">
+		<div id="header">
+			<table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tbody><tr>
+                <td class="header_logo"><a class="header_logo" href="/di"><img src="/di/images/mantis_logo.png" class="header_logo" alt="forge DSI"><!--<img src="/di/images/forge-logo.png" class="header_logo" alt="forge DSI">--></a></td>
+                <td class="header_actions">&nbsp;</td>
+            </tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+ 
+ <script language="javascript">
+ var myhref = parent.location.pathname;
+ if ( myhref.indexOf('/di/') == 0 ) {
+	document.getElementById('header_menu_mantis').style.display='block';
+ }
+</script><table class="hide"><tr><td class="login-info-left">Connecté en tant que : <span class="italic">LN5282</span> <span class="small">(Anas KHALLAAYOUN  - développeur)</span></td><td class="login-info-middle"><span class="italic">18-01-17 18:05</span></td><td class="login-info-right"><form method="post" name="form_set_project" action="set_project.php">Projet: <select name="project_id" class="small" onchange="document.forms.form_set_project.submit();"><option value="0">Tous les projets</option>
+<option value="105" selected="selected" >ESPACE CLIENT</option>
+<option value="105;109">&nbsp;&raquo; ESPACE CLIENT - Evolution</option>
+<option value="105;110">&nbsp;&raquo; ESPACE CLIENT - Production</option>
+<option value="105;111">&nbsp;&raquo; ESPACE CLIENT - Recette</option>
+<option value="74">ESPACE PUBLIC - Evolution</option>
+<option value="12">ESPACE PUBLIC - Production</option>
+<option value="15">ESPACE PUBLIC - Recette</option>
+<option value="68">Gazdefrance.fr - Evolution</option>
+<option value="52">Gazdefrance.fr - Production</option>
+<option value="55">Gazdefrance.fr - Recette</option>
+<option value="87">MANTIS DI - Demande de support</option>
+</select> <input type="submit" class="button-small" value="Afficher" /><a href="https://mantis.engie.com/di/issues_rss.php?username=LN5282&amp;key=87f159da0177158ec8cc58ee34cca2c9&amp;project_id=111"><img src="images/rss.gif" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;" /></a></form></td></tr></table><table class="width100" cellspacing="0"><tr><td class="menu"><a href="main_page.php">Accueil</a> | <a href="my_view_page.php">Mon affichage</a> | <a href="view_all_bug_page.php">Afficher les fiches</a> | <a href="bug_report_page.php">Créer une fiche</a> | <a href="account_page.php">Mon compte</a></td><td class="menu right nowrap"><form method="post" action="jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Fiche #" onfocus="if (this.value == 'Fiche #') this.value = ''" onblur="if (this.value == '') this.value = 'Fiche #'" />&nbsp;<input type="submit" class="button-small" value="Chercher" />&nbsp;</form></td></tr></table><div align="right"><small>Visité récemment: <a href="view.php?id=21208" title="[Nouveau] [PAIEMENT CB] - JDD">0021208</a>, <a href="view.php?id=21189" title="[En réalisation] [PROD] Reporting EC mercredi 18/01">0021189</a>, <a href="view.php?id=21173" title="[Recette KO] [TEMPLATE] - [Erreur] - Validation de modification">0021173</a>, <a href="view.php?id=21204" title="[En attente de réponse GDF] TNR : création EC depuis GAMA">0021204</a>, <a href="view.php?id=21205" title="[En attente de réponse GDF] [Batch new invoice] - PRE PROD - Test">0021205</a></small></div>
+<br />
+<table class="width100" cellspacing="1">
+
+
+<tr>
+
+	<!-- Title -->
+	<td class="form-title" colspan="3">
+		Afficher le rapport simplifié
+		<!-- Jump to Bugnotes -->
+		<span class="small"><span class="bracket-link">[&nbsp;<a href="#bugnotes">Aller aux notes</a>&nbsp;]</span> </span>
+
+		<!-- Send Bug Reminder -->
+			<span class="small">
+			<span class="bracket-link">[&nbsp;<a href="bug_reminder_page.php?bug_id=21208">Envoyer un rappel</a>&nbsp;]</span> 		</span>
+		</td>
+
+	<!-- prev/next links -->
+		<td class="center"><span class="small">
+		<span class="bracket-link">[&nbsp;<a href="bug_view_page.php?bug_id=21189">&gt;&gt;</a>&nbsp;]</span> 	</span></td>
+	
+	<!-- Links -->
+	<td class="right" colspan="2">
+
+		<!-- Advanced View (if enabled) -->
+			<span class="small"><span class="bracket-link">[&nbsp;<a href="bug_view_advanced_page.php?bug_id=21208">Rapport détaillé</a>&nbsp;]</span> </span>
+	
+			<!-- History -->
+		<span class="small"><span class="bracket-link">[&nbsp;<a href="bug_view_page.php?bug_id=21208&amp;history=1#history">Historique de la fiche</a>&nbsp;]</span> </span>
+	
+		<!-- Print Bug -->
+		<span class="small"><span class="bracket-link">[&nbsp;<a href="print_bug_page.php?bug_id=21208">Imprimer</a>&nbsp;]</span> </span>
+
+	</td>
+
+</tr>
+
+
+<!-- Labels -->
+<tr class="row-category">
+	<td>
+		ID	</td>
+	<td>
+		Catégorie	</td>
+	<td>
+		Sévérité	</td>
+	<td>
+		Reproductibilité	</td>
+	<td>
+		Date de soumission	</td>
+	<td>
+		Dernière mise à jour	</td>
+</tr>
+
+
+<tr class="row-1">
+
+	<!-- Bug ID -->
+	<td>
+		0021208	</td>
+
+	<!-- Category -->
+	<td>
+		[ESPACE CLIENT - Recette] Demande de support	</td>
+
+	<!-- Severity -->
+	<td>
+		mineur	</td>
+
+	<!-- Reproducibility -->
+	<td>
+		n'a pas essayé	</td>
+
+	<!-- Date Submitted -->
+	<td>
+		18-01-17 18:00	</td>
+
+	<!-- Date Updated -->
+	<td>
+		18-01-17 18:01	</td>
+
+</tr>
+
+
+<!-- spacer -->
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+
+
+<tr class="row-2">
+
+	<!-- Reporter -->
+	<td class="category">
+		Rapporteur	</td>
+	<td>
+		Stephane TAVERSON	</td>
+
+	<!-- View Status -->
+	<td class="category">
+		Afficher l'état	</td>
+	<td>
+		public	</td>
+
+	<!-- spacer -->
+	<td colspan="2">&nbsp;</td>
+</tr>
+
+
+<!-- Handler -->
+<tr class="row-1">
+	<td class="category">
+		Assigné à	</td>
+	<td colspan="5">
+		Anas KHALLAAYOUN 	</td>
+</tr>
+
+
+<tr class="row-2">
+
+	<!-- Priority -->
+	<td class="category">
+		Priorité	</td>
+	<td>
+		élevée	</td>
+
+	<!-- Resolution -->
+	<td class="category">
+		Résolution	</td>
+	<td>
+		ouvert	</td>
+
+	<!-- spacer -->
+	<td colspan="2">&nbsp;</td>
+</tr>
+
+
+<tr class="row-1">
+
+	<!-- Status -->
+	<td class="category">
+		État	</td>
+	<td bgcolor="pink">
+		Nouveau	</td>
+
+	<td colspan="2">&nbsp;</td>
+	<!-- Product Version -->
+		<td class="category">
+		Version du produit	</td>
+	<td>
+			</td>
+	</tr>
+
+
+<!-- spacer -->
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+
+
+<!-- Summary -->
+<tr class="row-2">
+	<td class="category">
+		Résumé	</td>
+	<td colspan="5">
+		0021208: [PAIEMENT CB] - JDD	</td>
+</tr>
+
+
+<!-- Description -->
+<tr class="row-1">
+	<td class="category">
+		Description	</td>
+	<td colspan="5">
+		Bonjour,<br />
+<br />
+Dans le cadre d'une campagne de tests sur le paiement CB, nous aurions besoin d'une vingtaine de JDD (CC) éligibles au paiement CB.<br />
+<br />
+Date souhaitée: d'ici la fin de semaine si possible.<br />
+<br />
+Cordialement,	</td>
+</tr>
+
+
+<!-- Additional Information -->
+<tr class="row-2">
+	<td class="category">
+		Informations complémentaires	</td>
+	<td colspan="5">
+			</td>
+</tr>
+
+<!-- Tagging -->
+<tr class="row-1">
+	<td class="category">Balises</td>
+	<td colspan="5">
+Aucune balise n'est associée.	</td>
+</tr>
+
+<tr class="row-2">
+	<td class="category">Associer balises</td>
+	<td colspan="5">
+		<small>(Séparer by ',')</small> 
+		<form method="post" action="tag_attach.php">
+		<input type="hidden" name="tag_attach_token" value="20170118-3c72e1f8951a67472176f483804746caa27f8e08"/>		<input type="hidden" name="bug_id" value="21208" />
+				<input type="hidden" id="tag_separator" value="," />
+		<input type="text" name="tag_string" id="tag_string" size="40" value="" />
+		<select tabindex="1" name="tag_select" id="tag_select" onchange="tag_string_append( this.options[ this.selectedIndex ].text );">
+			<option value="0">Balises existantes</option><option value="16">18888</option><option value="3">batch</option><option value="5">bug</option><option value="4">bug webservice</option><option value="1">config</option><option value="2">doc</option><option value="9">Evolution middle</option><option value="12">FMC</option><option value="13">Gestion des occupants</option><option value="10">Middleware T2</option><option value="14">Pages divers</option><option value="7">PDDV_V5.5</option><option value="8">PDDV_V5.5_V7.5_JANV_2012</option><option value="15">PE</option><option value="11">reliquat 5.7</option><option value="6">webservice</option>		</select>
+				<input type="submit" value="Associer" class="button" />
+		</form>
+			</td>
+</tr>
+
+
+<!-- spacer -->
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+
+
+<!-- Custom Fields -->
+	<tr class="row-1">
+		<td class="category">
+			Brique applicative		</td>
+		<td colspan="5">
+			Middle		</td>
+	</tr>
+	<tr class="row-2">
+		<td class="category">
+			BU Client		</td>
+		<td colspan="5">
+			CHP		</td>
+	</tr>
+
+
+<!-- spacer -->
+<tr class="spacer">
+	<td colspan="6"></td>
+</tr>
+
+
+<!-- Attachments -->
+<tr class="row-1">
+	<td class="category">
+		<a name="attachments" id="attachments" />
+		Pièces jointes	</td>
+	<td colspan="5">
+			</td>
+</tr>
+
+<!-- Buttons -->
+<tr align="center">
+	<td align="center" colspan="6">
+<table><tr class="vcenter"><td class="center"><form method="post" action="bug_update_page.php">
+	<input type="hidden" name="bug_id" value="21208" />
+	<input type="submit" class="button" value="Mettre à jour la fiche" />
+</form>
+</td><td class="center"><form method="post" action="bug_assign.php"><input type="submit" class="button" value="Assigner à :" /> <select name="handler_id"><option value="698"  selected="selected" >[Rapporteur]</option><option value="0"></option><option value="693" >Anas KHALLAAYOUN </option><option value="671" >Aymeric DE ABREU</option><option value="631" >Benoit LE MEUR</option><option value="731" >Bouacha Majda</option><option value="700" >ElMARSLI Nezha</option><option value="510" >Emmanuel DELATTE</option><option value="600" >Fanny MAESTRACCI</option><option value="479" >Frédéric BRESSON</option><option value="702" >GARAMPON Aurelien</option><option value="541" >GRACIA Sylvie</option><option value="430" >Guillaume BLAIN</option><option value="711" >Janhaelle RIBEIRO-STORM</option><option value="669" >Joel CASTAGNET </option><option value="722" >Julia Sanchez</option><option value="483" >Julie Dubois</option><option value="657" >Julien MOULY</option><option value="675" >Karim MERABTINE</option><option value="459" >Mathias MICHALON</option><option value="445" >Maud Madarac</option><option value="691" >Melanie MILLET</option><option value="612" >Meryem HAJJAM</option><option value="729" >Nabil Debbou</option><option value="663" >Nathalie AZZOLIN</option><option value="114" >Patrick BEMBARON</option><option value="110" >Romain DUMONT</option><option value="446" >Régis Majorel</option><option value="699" >Saloua ELHAJHOUJ</option><option value="706" >Sophiane MAGOUR</option><option value="698" >Stephane TAVERSON</option><option value="695" >Terry Philibert</option><option value="712" >Thierry MULLER</option><option value="302" >Xavier RABY</option><option value="685" >Yassine Sakoum</option></select><input type="hidden" name="bug_id" value="21208" />
+</form>
+</td><td class="center"><form method="post" action="bug_change_status_page.php"><input type="submit" class="button" value="Changer l'état en :" /> <select name="new_status"><option value="35" >En attente de réponse GDF</option><option value="45" >Refusé</option><option value="50"  selected="selected" >Accepté</option></select><input type="hidden" name="bug_id" value="21208" />
+</form>
+</td><td class="center"><form method="post" action="bug_monitor.php">
+	<input type="hidden" name="bug_id" value="21208" />
+	<input type="hidden" name="action" value="add" />
+	<input type="submit" class="button" value="Démarrer surveillance de la fiche" />
+</form>
+</td><td class="center"><form method="post" action="bug_report_page.php">
+	<input type="hidden" name="m_id" value="21208" />
+	<input type="submit" class="button" value="Créer un fils" />
+</form>
+</td><td class="center"><form method="post" action="bug_actiongroup_page.php">
+	<input type="hidden" name="bug_arr[]" value="21208" />
+	<input type="hidden" name="action" value="MOVE" />
+	<input type="submit" class="button" value="Déplacer fiche" />
+</form>
+</td><td class="center"><form method="post" action="bug_actiongroup_page.php">
+	<input type="hidden" name="bug_arr[]" value="21208" />
+	<input type="hidden" name="action" value="DELETE" />
+	<input type="submit" class="button" value="Supprimer la fiche" />
+</form>
+</td></tr></table>	</td>
+</tr>
+
+
+</table>
+
+<br/>
+
+<div id="relationships_open"><table class="width100" cellspacing="1">
+<tr class="row-2" valign="top">
+	<td width="15%" class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'relationships', g_div_relationships ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Relations	</td>
+</tr>
+<tr class="row-1">
+	<td class="category">Nouvelle relation</td>
+	<td>Fiche courante		<form method="post" action="bug_relationship_add.php">
+		<input type="hidden" name="src_bug_id" value="21208" size="4" />
+		<select name="rel_type">
+<option value="2">dépendant de</option>
+<option value="3">bloque</option>
+<option value="0">doublon de</option>
+<option value="4">a pour doublon</option>
+<option value="1">lié à</option>
+</select>
+		<input type="text" name="dest_bug_id" value="" />
+		<input type="submit" name="add_relationship" class="button" value="Ajouter" />
+		</form>
+	</td></tr>
+<tr>
+	<td colspan="2"></td>
+</tr>
+</table>
+
+</div><div id="relationships_closed" style="display: none;"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title">
+		<a href="" onclick="ToggleDiv( 'relationships', g_div_relationships ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Relations	</td>
+</tr>
+</table>
+
+</div><script type="text/javascript" language="JavaScript"><!--
+	SetDiv( "relationships", g_div_relationships );
+--></script><br />
+
+<div id="upload_form_open"><form method="post" enctype="multipart/form-data" action="bug_file_add.php">
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'upload_form', g_div_upload_form ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Joindre un fichier	</td>
+</tr>
+<tr class="row-1">
+	<td class="category" width="15%">
+		Sélectionner un fichier<br />
+		<span class="small">(Taille max. : 2,000k)</span>	</td>
+	<td width="85%">
+		<input type="hidden" name="bug_id" value="21208" />
+		<input type="hidden" name="max_file_size" value="2000000" />
+		<input name="file" type="file" size="40" />
+		<input type="submit" class="button" value="Envoyer le fichier" />
+	</td>
+</tr>
+</table>
+</form>
+</div><div id="upload_form_closed" style="display: none;"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'upload_form', g_div_upload_form ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Joindre un fichier	</td>
+</tr>
+</table>
+
+</div><script type="text/javascript" language="JavaScript"><!--
+	SetDiv( "upload_form", g_div_upload_form );
+--></script><a name="monitors" id="monitors" /><br />
+<div id="monitoring_open"><table class="width100" cellspacing="1">
+<tr>
+	<td class="center">
+		Aucun utilisateur surveillant cette fiche.	</td>
+</tr>
+</table>
+</div><div id="monitoring_closed" style="display: none;"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2"><a href="" onclick="ToggleDiv( 'monitoring', g_div_monitoring ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;		Utilisateurs surveillant cette fiche	</td>
+</tr>
+</table>
+</div><script type="text/javascript" language="JavaScript"><!--
+	SetDiv( "monitoring", g_div_monitoring );
+--></script>
+
+<a name="bugnotes" id="bugnotes" /><br />
+
+<div id="bugnotes_open"><table class="width100" cellspacing="1">
+<tr>
+	<td class="center" colspan="2">
+		Cette fiche n'a aucune note.	</td>
+</tr>
+</table>
+
+</div><div id="bugnotes_closed" style="display: none;">
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+		<a href="" onclick="ToggleDiv( 'bugnotes', g_div_bugnotes ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;		Notes	</td>
+</tr>
+</table>
+</div><script type="text/javascript" language="JavaScript"><!--
+	SetDiv( "bugnotes", g_div_bugnotes );
+--></script>
+<a name="addbugnote"></a> <br />
+
+<div id="bugnote_add_open"><form name="bugnoteadd" method="post" action="bugnote_add.php">
+<input type="hidden" name="bug_id" value="21208" />
+<table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+<a href="" onclick="ToggleDiv( 'bugnote_add', g_div_bugnote_add ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Ajouter une note	</td>
+</tr>
+<tr class="row-2">
+	<td class="category" width="25%">
+		Note	</td>
+	<td width="75%">
+		<textarea name="bugnote_text" cols="80" rows="10"></textarea>
+	</td>
+</tr>
+
+<tr class="row-2">
+	<td class="category">
+		Suivi du temps	</td>
+	<td>
+				<input type="text" name="time_tracking" size="5" value="00:00" />
+			</td>
+</tr>
+
+<tr>
+	<td class="center" colspan="2">
+		<input type="submit" class="button" value="Ajouter la note" />
+	</td>
+</tr>
+</table>
+</form>
+</div>
+</div><div id="bugnote_add_closed" style="display: none;"><table class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="2">
+	<a href="" onclick="ToggleDiv( 'bugnote_add', g_div_bugnote_add ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Ajouter une note	</td>
+</tr>
+</table>
+</div><script type="text/javascript" language="JavaScript"><!--
+	SetDiv( "bugnote_add", g_div_bugnote_add );
+--></script>
+
+
+<a name="history" id="history" /><br />
+
+<div id="history_open"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+<a href="" onclick="ToggleDiv( 'history', g_div_history ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Historique de la fiche	</td>
+</tr>
+<tr class="row-category-history">
+	<td class="small-caption">
+		Date modifiée	</td>
+	<td class="small-caption">
+		Utilisateur	</td>
+	<td class="small-caption">
+		Champ	</td>
+	<td class="small-caption">
+		Changer	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		18-01-17 18:00	</td>
+	<td class="small-caption">
+		Stephane TAVERSON	</td>
+	<td class="small-caption">
+		Nouvelle fiche	</td>
+	<td class="small-caption">
+			</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		18-01-17 18:00	</td>
+	<td class="small-caption">
+		Stephane TAVERSON	</td>
+	<td class="small-caption">
+		Brique applicative	</td>
+	<td class="small-caption">
+		 =&gt; Middle	</td>
+</tr>
+<tr class="row-1">
+	<td class="small-caption">
+		18-01-17 18:00	</td>
+	<td class="small-caption">
+		Stephane TAVERSON	</td>
+	<td class="small-caption">
+		BU Client	</td>
+	<td class="small-caption">
+		 =&gt; CHP	</td>
+</tr>
+<tr class="row-2">
+	<td class="small-caption">
+		18-01-17 18:01	</td>
+	<td class="small-caption">
+		Stephane TAVERSON	</td>
+	<td class="small-caption">
+		Assigné à	</td>
+	<td class="small-caption">
+		 =&gt; Anas KHALLAAYOUN 	</td>
+</tr>
+</table>
+</div>
+</div><div id="history_closed" style="display: none;"><table class="width100" cellspacing="0">
+<tr>
+	<td class="form-title" colspan="4">
+	<a href="" onclick="ToggleDiv( 'history', g_div_history ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Historique de la fiche	</td>
+</tr>
+</table>
+
+</div><script type="text/javascript" language="JavaScript"><!--
+	SetDiv( "history", g_div_history );
+--></script>	<br />
+	<hr size="1" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>	<span class="timer"><a href="http://www.mantisbt.org/" title="Free Web Based Bug Tracker">Mantis 1.1.6</a>[<a href="http://www.mantisbt.org/"  title="Free Web Based Bug Tracker" target="_blank">^</a>]</span>
+	<address>Copyright &copy; 2000 - 2008 Mantis Group</address>
+	<address><a href="mailto:conduite-internet-hosting@engie.com">conduite-internet-hosting@engie.com</a></address>
+<span class="italic">Time: 0.079495 seconds.</span><br /></td><td><div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0" /></a></div></td></tr></table></body>
+</html>

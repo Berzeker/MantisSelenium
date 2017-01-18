@@ -1,0 +1,399 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="css/gdfsuez.css" />
+	<script type="text/javascript" language="JavaScript"><!--
+		if(document.layers) {document.write("<style>td{padding:0px;}<\/style>")}
+	// --></script>
+	<meta http-equiv="Content-type" content="text/html;charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache" />
+	<meta http-equiv="Cache-Control" content="no-cache" />
+	<meta http-equiv="Pragma-directive" content="no-cache" />
+	<meta http-equiv="Cache-Directive" content="no-cache" />
+	<meta http-equiv="Expires" content="Wed, 18 Jan 2017 17:07:53 GMT" />
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />	<title>Afficher les fiches - Mantis DI</title>
+	<script type="text/javascript" language="JavaScript" src="javascript/common.js"></script>
+	<script type="text/JavaScript" src="javascript/ajax.js"></script>
+	<meta http-equiv="Refresh" content="1800;URL=view_all_bug_page.php?page_number=1" />
+</head>
+<body>
+<div class="center"><span class="pagetitle">Mantis DI</span></div>
+
+ <STYLE type="text/css">
+.header_logo a, .header_logo a:visited, .header_logo a:link, .header_logo a:hover, .header_logo a img {
+color:#169283;
+font-size:40px;
+font-weight:800;
+padding:0;
+text-decoration:none;
+vertical-align:middle;
+}
+td, th {
+color:#333333;
+}
+td {
+display:table-cell;
+padding:1px;
+text-align:inherit;
+vertical-align:inherit;
+}
+table {
+border-collapse:separate;
+border-spacing:2px;
+text-indent:0;
+}
+#header {
+color:#FFF7F0;
+}
+
+</STYLE>
+ 
+<div id="header_menu_mantis" style="display:none">
+	<div id="wrapper">
+		<div id="header">
+			<table cellspacing="0" cellpadding="0" border="0" width="100%">
+            <tbody><tr>
+                <td class="header_logo"><a class="header_logo" href="/di"><img src="/di/images/mantis_logo.png" class="header_logo" alt="forge DSI"><!--<img src="/di/images/forge-logo.png" class="header_logo" alt="forge DSI">--></a></td>
+                <td class="header_actions">&nbsp;</td>
+            </tr>
+			</tbody>
+			</table>
+		</div>
+	</div>
+</div>
+ 
+ <script language="javascript">
+ var myhref = parent.location.pathname;
+ if ( myhref.indexOf('/di/') == 0 ) {
+	document.getElementById('header_menu_mantis').style.display='block';
+ }
+</script><table class="hide"><tr><td class="login-info-left">Connecté en tant que : <span class="italic">LN5282</span> <span class="small">(Anas KHALLAAYOUN  - développeur)</span></td><td class="login-info-middle"><span class="italic">18-01-17 18:07</span></td><td class="login-info-right"><form method="post" name="form_set_project" action="set_project.php">Projet: <select name="project_id" class="small" onchange="document.forms.form_set_project.submit();"><option value="0">Tous les projets</option>
+<option value="105" selected="selected" >ESPACE CLIENT</option>
+<option value="105;109">&nbsp;&raquo; ESPACE CLIENT - Evolution</option>
+<option value="105;110">&nbsp;&raquo; ESPACE CLIENT - Production</option>
+<option value="105;111">&nbsp;&raquo; ESPACE CLIENT - Recette</option>
+<option value="74">ESPACE PUBLIC - Evolution</option>
+<option value="12">ESPACE PUBLIC - Production</option>
+<option value="15">ESPACE PUBLIC - Recette</option>
+<option value="68">Gazdefrance.fr - Evolution</option>
+<option value="52">Gazdefrance.fr - Production</option>
+<option value="55">Gazdefrance.fr - Recette</option>
+<option value="87">MANTIS DI - Demande de support</option>
+</select> <input type="submit" class="button-small" value="Afficher" /><a href="https://mantis.engie.com/di/issues_rss.php?username=LN5282&amp;key=87f159da0177158ec8cc58ee34cca2c9&amp;project_id=105"><img src="images/rss.gif" alt="RSS" style="border-style: none; margin: 5px; vertical-align: middle;" /></a></form></td></tr></table><table class="width100" cellspacing="0"><tr><td class="menu"><a href="main_page.php">Accueil</a> | <a href="my_view_page.php">Mon affichage</a> | <a href="view_all_bug_page.php">Afficher les fiches</a> | <a href="bug_report_page.php">Créer une fiche</a> | <a href="account_page.php">Mon compte</a></td><td class="menu right nowrap"><form method="post" action="jump_to_bug.php"><input type="text" name="bug_id" size="10" class="small" value="Fiche #" onfocus="if (this.value == 'Fiche #') this.value = ''" onblur="if (this.value == '') this.value = 'Fiche #'" />&nbsp;<input type="submit" class="button-small" value="Chercher" />&nbsp;</form></td></tr></table><div align="right"><small>Visité récemment: <a href="view.php?id=21208" title="[Nouveau] [PAIEMENT CB] - JDD">0021208</a>, <a href="view.php?id=21189" title="[En réalisation] [PROD] Reporting EC mercredi 18/01">0021189</a>, <a href="view.php?id=21173" title="[Recette KO] [TEMPLATE] - [Erreur] - Validation de modification">0021173</a>, <a href="view.php?id=21204" title="[En attente de réponse GDF] TNR : création EC depuis GAMA">0021204</a>, <a href="view.php?id=21205" title="[En attente de réponse GDF] [Batch new invoice] - PRE PROD - Test">0021205</a></small></div><div id="filter_open">
+		<br />
+		<form method="post" name="filters_open" id="filters_form_open" action="view_all_set.php?f=3">
+		<input type="hidden" name="type" value="1" />
+				<input type="hidden" name="page_number" value="1" />
+		<input type="hidden" name="view_type" value="advanced" />
+		<table class="width100" cellspacing="1">
+
+		
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=reporter_id[]" id="reporter_id_filter">Rapporteur:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=user_monitor[]" id="user_monitor_filter">Surveillé par:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=handler_id[]" id="handler_id_filter">Assigné à:</a>
+			</td>
+			<td colspan="2" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_category[]" id="show_category_filter">Catégorie:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_severity[]" id="show_severity_filter">Sévérité:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_resolution[]" id="show_resolution_filter">Résolution:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_profile[]" id="show_profile_filter">Profil:</a>
+			</td>
+					</tr>
+
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="reporter_id_filter_target">
+																	<input type="hidden" name="reporter_id[]" value="0" />
+										Tous			</td>
+			<td class="small-caption" valign="top" id="user_monitor_filter_target">
+																	<input type="hidden" name="user_monitor[]" value="0" />
+										Tous			</td>
+			<td class="small-caption" valign="top" id="handler_id_filter_target">
+																	<input type="hidden" name="handler_id[]" value="0" />
+										Tous			</td>
+			<td colspan="2" class="small-caption" valign="top" id="show_category_filter_target">
+																	<input type="hidden" name="show_category[]" value="0" />
+										Tous			</td>
+			<td class="small-caption" valign="top" id="show_severity_filter_target">
+																	<input type="hidden" name="show_severity[]" value="0" />
+										Tous			</td>
+			<td class="small-caption" valign="top" id="show_resolution_filter_target">
+																	<input type="hidden" name="show_resolution[]" value="0" />
+										Tous			</td>
+			<td class="small-caption" valign="top" id="show_profile_filter_target">
+																	<input type="hidden" name="show_profile[]" value="0" />
+										Tous			</td>
+						</tr>
+
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_status[]" id="show_status_filter">État:</a>
+			</td>
+			<td class="small-caption" valign="top">
+							</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_build[]" id="show_build_filter">Build:</a>
+			</td>
+						<td colspan="2" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_version[]" id="show_version_filter">Version du produit:</a>
+			</td>
+			<td colspan="1" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=fixed_in_version[]" id="show_fixed_in_version_filter">Résolu dans la version:</a>
+			</td>
+						<td colspan="1" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_priority[]" id="show_priority_filter">Priorité:</a>
+			</td>
+			<td colspan="1" class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=target_version[]" id="show_target_version_filter">Version ciblée:</a>
+			</td>
+					</tr>
+
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="show_status_filter_target">
+																	<input type="hidden" name="show_status[]" value="0" />
+										Tous			</td>
+			<td class="small-caption" valign="top" id="hide_status_filter_target">
+										</td>
+			<td class="small-caption" valign="top" id="show_build_filter_target">
+																	<input type="hidden" name="show_build[]" value="0" />
+										Tous			</td>
+						<td colspan="2" class="small-caption" valign="top" id="show_version_filter_target">
+																	<input type="hidden" name="show_version[]" value="0" />
+										Tous			</td>
+			<td colspan="1" class="small-caption" valign="top" id="show_fixed_in_version_filter_target">
+																	<input type="hidden" name="fixed_in_version[]" value="0" />
+										Tous			</td>
+						<td colspan="1" class="small-caption" valign="top" id="show_priority_filter_target">
+              										<input type="hidden" name="show_priority[]" value="0" />
+										Tous	    	</td>
+			<td colspan="1" class="small-caption" valign="top" id="show_target_version_filter_target">
+																	<input type="hidden" name="target_version[]" value="0" />
+										Tous			</td>
+			
+		</tr>
+
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=per_page" id="per_page_filter">Afficher:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=view_state" id="view_state_filter">Afficher l'état:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=sticky_issues" id="sticky_issues_filter">Afficher les fiches récurrantes:</a>
+			</td>
+			<td class="small-caption" valign="top" colspan="2">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=highlight_changed" id="highlight_changed_filter">Modifiés (heures):</a>
+			</td>
+			<td class="small-caption" valign="top" >
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=do_filter_by_date" id="do_filter_by_date_filter">Utiliser les filtres de date:</a>
+			</td>
+			<td class="small-caption" valign="top" colspan="2">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=relationship_type" id="relationship_type_filter">Relations:</a>
+			</td>
+					</tr>
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="per_page_filter_target">
+				50				<input type="hidden" name="per_page" value="50" />
+			</td>
+			<td class="small-caption" valign="top" id="view_state_filter_target">
+				Tous				<input type="hidden" name="view_state" value="0" />
+			</td>
+			<td class="small-caption" valign="top" id="sticky_issues_filter_target">
+				Non				<input type="hidden" name="sticky_issues" value="off" />
+			</td>
+			<td class="small-caption" valign="top" colspan="2" id="highlight_changed_filter_target">
+				6				<input type="hidden" name="highlight_changed" value="6" />
+			</td>
+			<td class="small-caption" valign="top"  id="do_filter_by_date_filter_target">
+									<script type="text/javascript" language="JavaScript">
+		<!--
+			function SwitchDateFields() {
+		    	// All fields need to be enabled to go back to the script
+				document.filters_open.start_month.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.start_day.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.start_year.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_month.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_day.disabled = ! document.filters_open.do_filter_by_date.checked;
+				document.filters_open.end_year.disabled = ! document.filters_open.do_filter_by_date.checked;
+
+		   		return true;
+			}
+		// -->
+		</script>
+							Non			</td>
+
+			<td class="small-caption" valign="top" colspan="2" id="relationship_type_filter_target">
+							<input type="hidden" name="relationship_type" value="-1" />
+							<input type="hidden" name="relationship_bug" value="0" />
+							Tous			</td>
+					</tr>
+		<tr class="row-category2">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=platform" id="platform_filter">Plate-forme:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=os" id="os_filter">OS:</a>
+			</td>
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=os_build" id="os_build_filter">Version:</a>
+			</td>
+			<td class="small-caption" valign="top" colspan="5">
+								<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=tag_string" id="tag_string_filter">Balises:</a>
+							</td>
+					</tr>
+		<tr class="row-1">
+			<td class="small-caption" valign="top" id="platform_filter_target">
+								<input type="hidden" name="platform[]" value="0" />
+				Tous			</td>
+			<td class="small-caption" valign="top" id="os_filter_target">
+								<input type="hidden" name="os[]" value="0" />
+				Tous			</td>
+			<td class="small-caption" valign="top" id="os_build_filter_target">
+								<input type="hidden" name="os_build[]" value="0" />
+				Tous			</td>
+			<td class="small-caption" valign="top" id="tag_string_filter_target" colspan="5">
+								<input type="hidden" name="tag_string" value=""/>
+			</td>
+		</tr>
+		<tr class="row-category2"><td class="small-caption" valign="top"> <a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=custom_field_16[]" id="custom_field_16_filter">Brique applicative</a> </td> <td class="small-caption" valign="top"> <a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=custom_field_15[]" id="custom_field_15_filter">BU Client</a> </td> <td class="small-caption" valign="top"> <a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=custom_field_10[]" id="custom_field_10_filter">Version de livraison</a> </td> <td colspan="5">&nbsp;</td> </tr>
+<tr class="row-1"><td class="small-caption" valign="top" id="custom_field_16_filter_target"> <input type="hidden" name="custom_field_16[]" value="0" />Tous </td><td class="small-caption" valign="top" id="custom_field_15_filter_target"> <input type="hidden" name="custom_field_15[]" value="0" />Tous </td><td class="small-caption" valign="top" id="custom_field_10_filter_target"> <input type="hidden" name="custom_field_10[]" value="0" />Tous </td><td colspan="5">&nbsp;</td> </tr>
+		<tr class="row-1">
+			<td class="small-caption" valign="top">
+				<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=show_sort" id="show_sort_filter">Trier par:</a>
+			</td>
+			<td class="small-caption" valign="top" colspan="2" id="show_sort_filter_target">
+				Dernière mise à jour Décroissant<input type="hidden" name="sort_0" value="last_updated" /><input type="hidden" name="dir_0" value="DESC" />			</td>
+								<td class="small-caption" valign="top" colspan="2">
+						<a href="view_filters_page.php?for_screen=1&amp;view_type=advanced&amp;target_field=project_id" id="project_id_filter">Projet:</a>
+					</td>
+					<td class="small-caption" valign="top"  id="project_id_filter_target">
+															<input type="hidden" name="project_id[]" value="-3" />
+									actuelle					</td>
+					<td class="small-caption" valign="top" colspan="3">&nbsp;</td>		</tr>
+				<tr>
+			<td colspan="2">
+				<a href="" onclick="ToggleDiv( 'filter', g_div_filter ); return false;"
+			><img border="0" src="images/minus.png" alt="-" /></a>&nbsp;Chercher:
+				<input type="text" size="16" name="search" value="" />
+
+				<input type="submit" name="filter" class="button-small" value="Filtrer" />
+			</td>
+			</form>
+			<td class="center" colspan="2"> <!-- use this label for padding -->
+				<span class="bracket-link">[&nbsp;<a href="view_all_set.php?type=6&amp;view_type=simple">Filtres simples</a>&nbsp;]</span> <span class="bracket-link">[&nbsp;<a href="permalink_page.php?url=https%3A%2F%2Fmantis.engie.com%2Fdi%2Fsearch.php%3Fproject_id%3D105%26amp%3Bsticky_issues%3Doff%26amp%3Bsortby%3Dlast_updated%26amp%3Bdir%3DDESC%26amp%3Bhide_status_id%3D-2%26amp%3Bcustom_field_13%255B%255D%3D%26amp%3Bcustom_field_13%255B%255D%3D1%26amp%3Bcustom_field_13%255B%255D%3D1%26amp%3Bcustom_field_5%255B%255D%3D%26amp%3Bcustom_field_5%255B%255D%3D1%26amp%3Bcustom_field_5%255B%255D%3D1%26amp%3Bcustom_field_12%255B%255D%3D%26amp%3Bcustom_field_12%255B%255D%3D1%26amp%3Bcustom_field_12%255B%255D%3D1" target="_blank">Créer lien permanent</a>&nbsp;]</span> 			</td>
+			<td class="right" colspan="4">
+								<form method="get" name="list_queries_open" action="view_all_set.php">
+					<input type="hidden" name="type" value="3" />
+					<select name="source_query_id" onchange="document.forms.list_queries_open.submit();">					<option value="-1">[Effacer le filtre]</option>
+					<option value="-1"></option>
+					<option value="4896">00-MCO_MIDDLE</option><option value="4629">00-Suivi MCO</option><option value="389">A traiter Evol</option><option value="1500">Ano_Min_Cote_MCO_Bloc2</option><option value="1671">Anomalies_Bloc 2&3.2_Maj_Bloq_cote_MCO</option><option value="1672">Anomalies_Bloc 2&3.2_Maj_Bloq_cote_MOE</option><option value="1673">Anomalies_GDFE&Bloc 3.1_Maj_Bloq_cote_MCO</option><option value="1676">Anomalies_GDFE&Bloc 3.1_Maj_Bloq_cote_MOE</option><option value="1677">Anomalies_IIG_Maj_Bloq_cote_MCO</option><option value="1678">Anomalies_IIG_Maj_Bloq_cote_MOE</option><option value="2540">Anomalies_IRIS_Maj_Bloq_cote_MCO</option><option value="1107">Anomalies_Maj_Bloq_cote_MCO</option><option value="1422">Anomalies_Maj_Bloq_cote_MOE</option><option value="2086">Conduite_Applicative_IIG_coteMCO</option><option value="3875">DECLIC - PROD - Anomalies avant RE7</option><option value="1679">Demande_Support_Bloc2&3.2_cote_MCO</option><option value="1680">Demande_Support_GDFE&Bloc3.1_cote_MCO</option><option value="1681">Demande_Support_IIG_cote_MCO</option><option value="2541">Demande_Support_IRIS_cote_MCO</option><option value="1684">Demande_Travaux_Bloc2&3.2_cote_MCO</option><option value="1682">Demande_Travaux_GDFE&Bloc3.1_cote_MCO</option><option value="1683">Demande_Travaux_IIG_cote_MCO</option><option value="2542">Demande_Travaux_IRIS_cote_MCO</option><option value="1108">Demandes_Support_cote_MCO</option><option value="1109">Demandes_Travaux_cote_MCO</option><option value="576">ECX_Recette_Anomalies_A_Traiter</option><option value="2224">ECX_Suivi_Production</option><option value="1048">MCO - Surveillance</option><option value="397">MOA à traiter</option><option value="1643">PDDV_Anomalies_et_Support</option><option value="1778">PDDV_Conduite</option><option value="1642">PDDV_Evolutions</option><option value="2308">PDDV_Recette</option><option value="1780">PDDV_Tous</option><option value="2163">PDDV_Tous_sauf_evolution</option><option value="2143">PDDV_Tous_sauf_evolution_et_recette</option><option value="749">Tout-Mai2010</option><option value="559">Tout/période</option>					</select>
+					<input type="submit" name="switch_to_query_button" class="button-small" value="Utiliser le filtre" />
+					</form>
+					<form method="post" name="open_queries" action="query_view_page.php">
+					<input type="submit" name="switch_to_query_button" class="button-small" value="Gérer les filtres" />
+					</form>
+									<form method="post" name="save_query" action="query_store_page.php">
+					<input type="submit" name="save_query_button" class="button-small" value="Enregistrer le filtre utilisé" />
+					</form>
+						</td>
+		</tr>
+		</table>
+</div><div id="filter_closed" style="display: none;">
+		<br />
+		<form method="post" name="filters_closed" id="filters_form_closed" action="view_all_set.php?f=3">
+		<input type="hidden" name="type" value="1" />
+				<input type="hidden" name="page_number" value="1" />
+		<input type="hidden" name="view_type" value="advanced" />
+		<table class="width100" cellspacing="1">
+
+				<tr>
+			<td colspan="2">
+				<a href="" onclick="ToggleDiv( 'filter', g_div_filter ); return false;"
+			><img border="0" src="images/plus.png" alt="+" /></a>&nbsp;Chercher:
+				<input type="text" size="16" name="search" value="" />
+
+				<input type="submit" name="filter" class="button-small" value="Filtrer" />
+			</td>
+			</form>
+			<td class="center" colspan="2"> <!-- use this label for padding -->
+				<span class="bracket-link">[&nbsp;<a href="view_all_set.php?type=6&amp;view_type=simple">Filtres simples</a>&nbsp;]</span> <span class="bracket-link">[&nbsp;<a href="permalink_page.php?url=https%3A%2F%2Fmantis.engie.com%2Fdi%2Fsearch.php%3Fproject_id%3D105%26amp%3Bsticky_issues%3Doff%26amp%3Bsortby%3Dlast_updated%26amp%3Bdir%3DDESC%26amp%3Bhide_status_id%3D-2%26amp%3Bcustom_field_13%255B%255D%3D%26amp%3Bcustom_field_13%255B%255D%3D1%26amp%3Bcustom_field_13%255B%255D%3D1%26amp%3Bcustom_field_5%255B%255D%3D%26amp%3Bcustom_field_5%255B%255D%3D1%26amp%3Bcustom_field_5%255B%255D%3D1%26amp%3Bcustom_field_12%255B%255D%3D%26amp%3Bcustom_field_12%255B%255D%3D1%26amp%3Bcustom_field_12%255B%255D%3D1" target="_blank">Créer lien permanent</a>&nbsp;]</span> 			</td>
+			<td class="right" colspan="4">
+								<form method="get" name="list_queries_closed" action="view_all_set.php">
+					<input type="hidden" name="type" value="3" />
+					<select name="source_query_id" onchange="document.forms.list_queries_closed.submit();">					<option value="-1">[Effacer le filtre]</option>
+					<option value="-1"></option>
+					<option value="4896">00-MCO_MIDDLE</option><option value="4629">00-Suivi MCO</option><option value="389">A traiter Evol</option><option value="1500">Ano_Min_Cote_MCO_Bloc2</option><option value="1671">Anomalies_Bloc 2&3.2_Maj_Bloq_cote_MCO</option><option value="1672">Anomalies_Bloc 2&3.2_Maj_Bloq_cote_MOE</option><option value="1673">Anomalies_GDFE&Bloc 3.1_Maj_Bloq_cote_MCO</option><option value="1676">Anomalies_GDFE&Bloc 3.1_Maj_Bloq_cote_MOE</option><option value="1677">Anomalies_IIG_Maj_Bloq_cote_MCO</option><option value="1678">Anomalies_IIG_Maj_Bloq_cote_MOE</option><option value="2540">Anomalies_IRIS_Maj_Bloq_cote_MCO</option><option value="1107">Anomalies_Maj_Bloq_cote_MCO</option><option value="1422">Anomalies_Maj_Bloq_cote_MOE</option><option value="2086">Conduite_Applicative_IIG_coteMCO</option><option value="3875">DECLIC - PROD - Anomalies avant RE7</option><option value="1679">Demande_Support_Bloc2&3.2_cote_MCO</option><option value="1680">Demande_Support_GDFE&Bloc3.1_cote_MCO</option><option value="1681">Demande_Support_IIG_cote_MCO</option><option value="2541">Demande_Support_IRIS_cote_MCO</option><option value="1684">Demande_Travaux_Bloc2&3.2_cote_MCO</option><option value="1682">Demande_Travaux_GDFE&Bloc3.1_cote_MCO</option><option value="1683">Demande_Travaux_IIG_cote_MCO</option><option value="2542">Demande_Travaux_IRIS_cote_MCO</option><option value="1108">Demandes_Support_cote_MCO</option><option value="1109">Demandes_Travaux_cote_MCO</option><option value="576">ECX_Recette_Anomalies_A_Traiter</option><option value="2224">ECX_Suivi_Production</option><option value="1048">MCO - Surveillance</option><option value="397">MOA à traiter</option><option value="1643">PDDV_Anomalies_et_Support</option><option value="1778">PDDV_Conduite</option><option value="1642">PDDV_Evolutions</option><option value="2308">PDDV_Recette</option><option value="1780">PDDV_Tous</option><option value="2163">PDDV_Tous_sauf_evolution</option><option value="2143">PDDV_Tous_sauf_evolution_et_recette</option><option value="749">Tout-Mai2010</option><option value="559">Tout/période</option>					</select>
+					<input type="submit" name="switch_to_query_button" class="button-small" value="Utiliser le filtre" />
+					</form>
+					<form method="post" name="open_queries" action="query_view_page.php">
+					<input type="submit" name="switch_to_query_button" class="button-small" value="Gérer les filtres" />
+					</form>
+									<form method="post" name="save_query" action="query_store_page.php">
+					<input type="submit" name="save_query_button" class="button-small" value="Enregistrer le filtre utilisé" />
+					</form>
+						</td>
+		</tr>
+		</table>
+</div><script type="text/javascript" language="JavaScript"><!--
+	SetDiv( "filter", g_div_filter );
+--></script>		<script type="text/javascript" language="JavaScript">
+		<!--
+			var string_loading = 'Chargement en cours...';
+		// -->
+		</script>
+		<script type="text/javascript" language="JavaScript" src="javascript/xmlhttprequest.js"></script>
+		<script type="text/javascript" language="JavaScript" src="javascript/addLoadEvent.js"></script>
+		<script type="text/javascript" language="JavaScript" src="javascript/dynamic_filters.js"></script>
+		<br />
+<form name="bug_action" method="get" action="bug_actiongroup_page.php">
+<table id="buglist" class="width100" cellspacing="1">
+<tr>
+	<td class="form-title" colspan="8">
+		Liste des fiches (1 - 50 / 8241)
+		<span class="small"> <span class="bracket-link">[&nbsp;<a href="print_all_bug_page.php">Rapport imprimable</a>&nbsp;]</span> &nbsp;<span class="bracket-link">[&nbsp;<a href="csv_export.php">Export CSV</a>&nbsp;]</span>  </span>
+	</td>
+
+	<td class="right" colspan="2">
+		<span class="small"> [  Premier  Précédent 1&nbsp;<a href="view_all_bug_page.php?page_number=2">2</a>&nbsp;<a href="view_all_bug_page.php?page_number=3">3</a>&nbsp;<a href="view_all_bug_page.php?page_number=4">4</a>&nbsp;<a href="view_all_bug_page.php?page_number=5">5</a>&nbsp;<a href="view_all_bug_page.php?page_number=6">6</a>&nbsp;<a href="view_all_bug_page.php?page_number=7">7</a>&nbsp;<a href="view_all_bug_page.php?page_number=8">8</a>&nbsp;<a href="view_all_bug_page.php?page_number=9">9</a>&nbsp;<a href="view_all_bug_page.php?page_number=10">10</a>&nbsp;<a href="view_all_bug_page.php?page_number=11">11</a> ...  <a href="view_all_bug_page.php?page_number=2">Suivant</a>  <a href="view_all_bug_page.php?page_number=165">Dernier</a>  ] </span>
+	</td>
+</tr>
+<tr class="row-category">
+<td> &nbsp; </td><td> &nbsp; </td><td><a href="view_all_set.php?sort=priority&amp;dir=DESC&amp;type=2">P</a></td><td><a href="view_all_set.php?sort=id&amp;dir=DESC&amp;type=2">ID</a></td><td> # </td><td><a href="view_all_set.php?sort=category&amp;dir=DESC&amp;type=2">Catégorie</a></td><td><a href="view_all_set.php?sort=severity&amp;dir=DESC&amp;type=2">Sévérité</a></td><td><a href="view_all_set.php?sort=status&amp;dir=DESC&amp;type=2">État</a></td><td><a href="view_all_set.php?sort=last_updated&amp;dir=ASC&amp;type=2">Mis à jour</a><img src="https://mantis.engie.com/di/images/down.gif" alt="" /></td><td><a href="view_all_set.php?sort=summary&amp;dir=DESC&amp;type=2">Résumé</a></td></tr>
+
+<tr class="spacer">
+	<td colspan="10"></td>
+</tr>
+<tr bgcolor="pink" border="1"><td><input type="checkbox" name="bug_arr[]" value="21208" /></td><td><a href="bug_update_page.php?bug_id=21208"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21208">0021208</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">Nouveau</span> (Anas KHALLAAYOUN )</td><td class="center"><span class="bold">18-01-17</span></td><td class="left">[PAIEMENT CB] - JDD</td></tr><tr bgcolor="palegoldenrod" border="1"><td><input type="checkbox" name="bug_arr[]" value="21189" /></td><td><a href="bug_update_page.php?bug_id=21189"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_normal.gif" alt="" title="normale" /></td><td><a href="view.php?id=21189">0021189</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">En réalisation</span> (Yassine Sakoum)</td><td class="center"><span class="bold">18-01-17</span></td><td class="left">[PROD] Reporting EC mercredi 18/01</td></tr><tr bgcolor="magenta" border="1"><td><input type="checkbox" name="bug_arr[]" value="21205" /></td><td><a href="bug_update_page.php?bug_id=21205"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21205">0021205</a></td><td class="center"><span class="bold"><a href="view.php?id=21205&amp;nbn=1#bugnotes">1</a></span></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">En attente de réponse GDF</span> (Stephane TAVERSON)</td><td class="center"><span class="bold">18-01-17</span></td><td class="left">[Batch new invoice] - PRE PROD - Test</td></tr><tr bgcolor="magenta" border="1"><td><input type="checkbox" name="bug_arr[]" value="21185" /></td><td><a href="bug_update_page.php?bug_id=21185"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21185">0021185</a></td><td class="center"><a href="view.php?id=21185&amp;nbn=5#bugnotes">5</a></td><td class="center">Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">En attente de réponse GDF</span> (Benoit LE MEUR)</td><td class="center">18-01-17</td><td class="left">SGR- EC non créé depuis le flux RUBIS</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21177" /></td><td><a href="bug_update_page.php?bug_id=21177"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21177">0021177</a></td><td class="center"><a href="view.php?id=21177&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">18-01-17</td><td class="left">FBR - EC 35496 - COMMUNE DE BLANZY - FUSION A EFFECTUER</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21182" /></td><td><a href="bug_update_page.php?bug_id=21182"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21182">0021182</a></td><td class="center"><a href="view.php?id=21182&amp;nbn=4#bugnotes">4</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">18-01-17</td><td class="left">FBR - CREATION EC - SIREN 803418151</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21169" /></td><td><a href="bug_update_page.php?bug_id=21169"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21169">0021169</a></td><td class="center"><a href="view.php?id=21169&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">18-01-17</td><td class="left">FBR - EC 16225 - LA POSTE IMMO - MODIFICATION EN MASSE PROFIL DES UTILISATEURS</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21203" /></td><td><a href="bug_update_page.php?bug_id=21203"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21203">0021203</a></td><td class="center"><a href="view.php?id=21203&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Thierry MULLER)</td><td class="center">18-01-17</td><td class="left">RG Portail : nom numéro de mandat SLIMPAY</td></tr><tr bgcolor="magenta" border="1"><td><input type="checkbox" name="bug_arr[]" value="21204" /></td><td><a href="bug_update_page.php?bug_id=21204"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21204">0021204</a></td><td class="center"><a href="view.php?id=21204&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">En attente de réponse GDF</span> (Thierry MULLER)</td><td class="center">17-01-17</td><td class="left">TNR : création EC depuis GAMA</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21176" /></td><td><a href="bug_update_page.php?bug_id=21176"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21176">0021176</a></td><td class="center"><a href="view.php?id=21176&amp;nbn=5#bugnotes">5</a></td><td class="center">Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (GARAMPON Aurelien)</td><td class="center">17-01-17</td><td class="left">Volumétrie nombre de compte de l'ADMIN EC</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21187" /></td><td><a href="bug_update_page.php?bug_id=21187"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21187">0021187</a></td><td class="center"><a href="view.php?id=21187&amp;nbn=5#bugnotes">5</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Anomalie</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (GARAMPON Aurelien)</td><td class="center">17-01-17</td><td class="left">Absence de la valeur mode paiement</td></tr><tr bgcolor="chocolate" border="1"><td><input type="checkbox" name="bug_arr[]" value="21173" /></td><td><a href="bug_update_page.php?bug_id=21173"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21173">0021173</a></td><td class="center"><a href="view.php?id=21173&amp;nbn=7#bugnotes">7</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">Recette KO</span> (GARAMPON Aurelien)</td><td class="center">17-01-17</td><td class="left">[TEMPLATE] - [Erreur] - Validation de modification</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21154" /></td><td><a href="bug_update_page.php?bug_id=21154"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21154">0021154</a></td><td class="center"><a href="view.php?id=21154&amp;nbn=6#bugnotes">6</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (GRACIA Sylvie)</td><td class="center">17-01-17</td><td class="left">SGR- TELERELEVE - CHANGEMENT DE PRM DANS DECLIC - PRM 30002510230602 - EC 1579548</td></tr><tr bgcolor="magenta" border="1"><td><input type="checkbox" name="bug_arr[]" value="21174" /></td><td><a href="bug_update_page.php?bug_id=21174"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21174">0021174</a></td><td class="center"><a href="view.php?id=21174&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">En attente de réponse GDF</span> (Stephane TAVERSON)</td><td class="center">17-01-17</td><td class="left">ESPACE CLIENT] - [MODE DE PAIEMENT] - Label Unknown</td></tr><tr bgcolor="mediumpurple" border="1"><td><input type="checkbox" name="bug_arr[]" value="21171" /></td><td><a href="bug_update_page.php?bug_id=21171"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21171">0021171</a></td><td class="center"><a href="view.php?id=21171&amp;nbn=4#bugnotes">4</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="ouvert">Réponse GDF</span> (Benoit LE MEUR)</td><td class="center">17-01-17</td><td class="left">FBR - CREATION EN SUR BASE SIREN</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21043" /></td><td><a href="bug_update_page.php?bug_id=21043"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21043">0021043</a></td><td class="center"><a href="view.php?id=21043&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">16-01-17</td><td class="left">export nom des site ayant une &quot;,&quot;</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21149" /></td><td><a href="bug_update_page.php?bug_id=21149"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_normal.gif" alt="" title="normale" /></td><td><a href="view.php?id=21149">0021149</a></td><td class="center"><a href="view.php?id=21149&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">16-01-17</td><td class="left">[PROD] Reporting EC mercredi 11/01</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21188" /></td><td><a href="bug_update_page.php?bug_id=21188"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21188">0021188</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Anomalie</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="pas un bogue">Fermé</span> (Saloua ELHAJHOUJ)</td><td class="center">16-01-17</td><td class="left">Amelioration Synapse - telechargement de facture borderau</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21159" /></td><td><a href="bug_update_page.php?bug_id=21159"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21159">0021159</a></td><td class="center"><a href="view.php?id=21159&amp;nbn=4#bugnotes">4</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Anomalie</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="suspendu">Fermé</span> (Frédéric BRESSON)</td><td class="center">16-01-17</td><td class="left">FBR - EC 1584504 - NOREADE - TELECHARGEMENT BORDEREAU</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21183" /></td><td><a href="bug_update_page.php?bug_id=21183"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21183">0021183</a></td><td class="center"><a href="view.php?id=21183&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Anomalie</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">16-01-17</td><td class="left">DELTA - Generation des DELTA KO pour la journée du 12/01</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21111" /></td><td><a href="bug_update_page.php?bug_id=21111"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21111">0021111</a></td><td class="center"><a href="view.php?id=21111&amp;nbn=6#bugnotes">6</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Anomalie</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">16-01-17</td><td class="left">Erreur Fichier DELTA : mauvais droit remonté</td></tr><tr bgcolor="mediumpurple" border="1"><td><input type="checkbox" name="bug_arr[]" value="21168" /></td><td><a href="bug_update_page.php?bug_id=21168"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21168">0021168</a></td><td class="center"><a href="view.php?id=21168&amp;nbn=4#bugnotes">4</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Anomalie</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="suspendu">Réponse GDF</span> (Benoit LE MEUR)</td><td class="center">16-01-17</td><td class="left">FBR - 18425 - SDC LE PASTEUR - SOUSCRIPTION M@RELEVE</td></tr><tr bgcolor="pink" border="1"><td><input type="checkbox" name="bug_arr[]" value="21027" /></td><td><a href="bug_update_page.php?bug_id=21027"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21027">0021027</a></td><td class="center"><a href="view.php?id=21027&amp;nbn=6#bugnotes">6</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="ouvert">Nouveau</span> (ElMARSLI Nezha)</td><td class="center">16-01-17</td><td class="left">FBR - EC 13144 - HSBC FRANCE - EXPORT DETAILLE ET CUMULE SITE SEMESTRIEL</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21034" /></td><td><a href="bug_update_page.php?bug_id=21034"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21034">0021034</a></td><td class="center"><a href="view.php?id=21034&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Julia Sanchez)</td><td class="center">16-01-17</td><td class="left">PREPROD - batch New Invoice</td></tr><tr bgcolor="pink" border="1"><td><input type="checkbox" name="bug_arr[]" value="21175" /></td><td><a href="bug_update_page.php?bug_id=21175"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21175">0021175</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="suspendu">Nouveau</span> (Stephane TAVERSON)</td><td class="center">16-01-17</td><td class="left">Modifications des repertoires d'images template mail</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21170" /></td><td><a href="bug_update_page.php?bug_id=21170"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21170">0021170</a></td><td class="center"><a href="view.php?id=21170&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">16-01-17</td><td class="left">DELTA - Interlocuteur TRLV a declencher</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21132" /></td><td><a href="bug_update_page.php?bug_id=21132"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_normal.gif" alt="" title="normale" /></td><td><a href="view.php?id=21132">0021132</a></td><td class="center"><a href="view.php?id=21132&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">16-01-17</td><td class="left">[PROD] Reporting Utilisateurs Client  et reporting périmètre utilisateur mercredi 11/01</td></tr><tr bgcolor="pink" border="1"><td><input type="checkbox" name="bug_arr[]" value="21186" /></td><td><a href="bug_update_page.php?bug_id=21186"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_normal.gif" alt="" title="normale" /></td><td><a href="view.php?id=21186">0021186</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">Nouveau</span> (Anas KHALLAAYOUN )</td><td class="center">16-01-17</td><td class="left">[PROD] Reporting Utilisateurs Client  et reporting périmètre utilisateur mercredi 25/01</td></tr><tr bgcolor="yellowgreen" border="1"><td><input type="checkbox" name="bug_arr[]" value="21181" /></td><td><a href="bug_update_page.php?bug_id=21181"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21181">0021181</a></td><td class="center"><a href="view.php?id=21181&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">A recetter</span> (Stephane TAVERSON)</td><td class="center">16-01-17</td><td class="left">[SUIVI DE PROD] - [Remontée CRC] - rattachement CC</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21153" /></td><td><a href="bug_update_page.php?bug_id=21153"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21153">0021153</a></td><td class="center"><a href="view.php?id=21153&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Thierry MULLER)</td><td class="center">16-01-17</td><td class="left">[ACTIVATION EC] - [Parcours] - CGU + mot de passe</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21148" /></td><td><a href="bug_update_page.php?bug_id=21148"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21148">0021148</a></td><td class="center"><a href="view.php?id=21148&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">16-01-17</td><td class="left">DELTA - Interlocuteur TRLV multo</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21000" /></td><td><a href="bug_update_page.php?bug_id=21000"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21000">0021000</a></td><td class="center"><a href="view.php?id=21000&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (GARAMPON Aurelien)</td><td class="center">13-01-17</td><td class="left">Demande de support : batch</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="20732" /></td><td><a href="bug_update_page.php?bug_id=20732"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=20732">0020732</a></td><td class="center"><a href="view.php?id=20732&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Evolution</a>]</small><br />Evolution</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Sophiane MAGOUR)</td><td class="center">13-01-17</td><td class="left">[2016T3] Batch Invoice V2</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="20207" /></td><td><a href="bug_update_page.php?bug_id=20207"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=20207">0020207</a></td><td class="center"><a href="view.php?id=20207&amp;nbn=6#bugnotes">6</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Evolution</a>]</small><br />Evolution</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Sophiane MAGOUR)</td><td class="center">13-01-17</td><td class="left">[2016T3] Batch Invoice V2</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21135" /></td><td><a href="bug_update_page.php?bug_id=21135"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21135">0021135</a></td><td class="center"><a href="view.php?id=21135&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Stephane TAVERSON)</td><td class="center">13-01-17</td><td class="left">[Déploiement] - [Batch New invoice V2] - Demande</td></tr><tr bgcolor="yellowgreen" border="1"><td><input type="checkbox" name="bug_arr[]" value="21110" /></td><td><a href="bug_update_page.php?bug_id=21110"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21110">0021110</a></td><td class="center"><a href="view.php?id=21110&amp;nbn=9#bugnotes">9</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">A recetter</span> (Stephane TAVERSON)</td><td class="center">13-01-17</td><td class="left">Verification pour un EC</td></tr><tr bgcolor="yellowgreen" border="1"><td><input type="checkbox" name="bug_arr[]" value="21180" /></td><td><a href="bug_update_page.php?bug_id=21180"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21180">0021180</a></td><td class="center"><a href="view.php?id=21180&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">A recetter</span> (Stephane TAVERSON)</td><td class="center">13-01-17</td><td class="left">[SUIVI DE PROD] - [Remontée CRC] - rattachement CC</td></tr><tr bgcolor="mediumpurple" border="1"><td><input type="checkbox" name="bug_arr[]" value="21160" /></td><td><a href="bug_update_page.php?bug_id=21160"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21160">0021160</a></td><td class="center"><a href="view.php?id=21160&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="ouvert">Réponse GDF</span> (Benoit LE MEUR)</td><td class="center">12-01-17</td><td class="left">FBR - EC 1661035 - AU CHAPON BRESSAN SAS - CHANGEMENT DE MARCHE</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21162" /></td><td><a href="bug_update_page.php?bug_id=21162"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21162">0021162</a></td><td class="center"><a href="view.php?id=21162&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (GARAMPON Aurelien)</td><td class="center">11-01-17</td><td class="left">Demande de support : Suppression Ref Client</td></tr><tr bgcolor="pink" border="1"><td><input type="checkbox" name="bug_arr[]" value="21098" /></td><td><a href="bug_update_page.php?bug_id=21098"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21098">0021098</a></td><td class="center">&nbsp;</td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Evolution</a>]</small><br />Evolution</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="ouvert">Nouveau</span> (ElMARSLI Nezha)</td><td class="center">11-01-17</td><td class="left">Urgent Suppression des sites TRLV dans les DELTA</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21172" /></td><td><a href="bug_update_page.php?bug_id=21172"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21172">0021172</a></td><td class="center"><a href="view.php?id=21172&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Stephane TAVERSON)</td><td class="center">11-01-17</td><td class="left">[LOGS] - [Niveau le plus detaillé] - demande</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21155" /></td><td><a href="bug_update_page.php?bug_id=21155"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21155">0021155</a></td><td class="center"><a href="view.php?id=21155&amp;nbn=4#bugnotes">4</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Stephane TAVERSON)</td><td class="center">11-01-17</td><td class="left">[LOGS] - [Niveau le plus detaillé] - demande</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21157" /></td><td><a href="bug_update_page.php?bug_id=21157"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21157">0021157</a></td><td class="center"><a href="view.php?id=21157&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Stephane TAVERSON)</td><td class="center">11-01-17</td><td class="left">[EC] - [CREATION] - demande</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21122" /></td><td><a href="bug_update_page.php?bug_id=21122"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21122">0021122</a></td><td class="center"><a href="view.php?id=21122&amp;nbn=4#bugnotes">4</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Thierry MULLER)</td><td class="center">11-01-17</td><td class="left">CC non redescendu</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21053" /></td><td><a href="bug_update_page.php?bug_id=21053"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21053">0021053</a></td><td class="center"><a href="view.php?id=21053&amp;nbn=6#bugnotes">6</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Thierry MULLER)</td><td class="center">11-01-17</td><td class="left">Mauvaise association EC / CC</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21123" /></td><td><a href="bug_update_page.php?bug_id=21123"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21123">0021123</a></td><td class="center"><a href="view.php?id=21123&amp;nbn=2#bugnotes">2</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Thierry MULLER)</td><td class="center">11-01-17</td><td class="left">Melange de CC</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21114" /></td><td><a href="bug_update_page.php?bug_id=21114"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21114">0021114</a></td><td class="center"><a href="view.php?id=21114&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Stephane TAVERSON)</td><td class="center">11-01-17</td><td class="left">Ref client invalide alors que OK dans GAMA et SAP</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21118" /></td><td><a href="bug_update_page.php?bug_id=21118"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21118">0021118</a></td><td class="center"><a href="view.php?id=21118&amp;nbn=3#bugnotes">3</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">11-01-17</td><td class="left">FBR - CREATION EC SUR NRID PAYEUR</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21161" /></td><td><a href="bug_update_page.php?bug_id=21161"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21161">0021161</a></td><td class="center"><a href="view.php?id=21161&amp;nbn=1#bugnotes">1</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Production</a>]</small><br />Demande de support</td><td class="center">majeur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Benoit LE MEUR)</td><td class="center">11-01-17</td><td class="left">FBR - CREATION D UN EC SUR BASE DU NRID</td></tr><tr bgcolor="silver" border="1"><td><input type="checkbox" name="bug_arr[]" value="21143" /></td><td><a href="bug_update_page.php?bug_id=21143"><img border="0" width="16" height="16" src="https://mantis.engie.com/di/images/update.png" alt="Mettre à jour la fiche" title="Mettre à jour la fiche" /></a></td><td><img src="https://mantis.engie.com/di/images/priority_2.gif" alt="" title="élevée" /></td><td><a href="view.php?id=21143">0021143</a></td><td class="center"><a href="view.php?id=21143&amp;nbn=8#bugnotes">8</a></td><td class="center"><small>[<a href="view_all_set.php?sort=project_id&amp;dir=DESC&amp;type=2">ESPACE CLIENT - Recette</a>]</small><br />Demande de support</td><td class="center">mineur</td><td class="center"><span class="issue-status" title="résolu">Fermé</span> (Stephane TAVERSON)</td><td class="center">11-01-17</td><td class="left">Modifications des repertoires d'images template mail</td></tr>	<tr>
+		<td class="left" colspan="8">
+<input type="checkbox" name="all_bugs" value="all" onclick="checkall('bug_action', this.form.all_bugs.checked)" /><span class="small">Selectionner tous</span>			<select name="action">
+				<option value="MOVE">Déplacer</option><option value="COPY">Copier</option><option value="ASSIGN">Assigner</option><option value="CLOSE">Fermer</option><option value="DELETE">Supprimer</option><option value="RESOLVE">Résoudre</option><option value="SET_STICKY">Activer / désactiver la récurrence</option><option value="UP_PRIOR">Mettre à jour la priorité</option><option value="UP_STATUS">Mettre à jour l'état</option><option value="UP_CATEGORY">Mettre à jour la Catégorie</option><option value="VIEW_STATUS">Mettre à jour Afficher l'état</option><option value="EXT_ADD_NOTE">Ajouter une note</option><option value="EXT_ATTACH_TAGS">Ajouter des balises</option><option value="UP_FIXED_IN_VERSION">Mettre à jour la version résolu</option><option value="UP_TARGET_VERSION">Mettre à jour la version cible</option><option value="custom_field_16">Mettre à jour Brique applicative</option><option value="custom_field_15">Mettre à jour BU Client</option><option value="custom_field_10">Mettre à jour Version de livraison</option>			</select>
+			<input type="submit" class="button" value="OK" />
+		</td>
+				<td class="right" colspan="2">
+			<span class="small">
+				[  Premier  Précédent 1&nbsp;<a href="view_all_bug_page.php?page_number=2">2</a>&nbsp;<a href="view_all_bug_page.php?page_number=3">3</a>&nbsp;<a href="view_all_bug_page.php?page_number=4">4</a>&nbsp;<a href="view_all_bug_page.php?page_number=5">5</a>&nbsp;<a href="view_all_bug_page.php?page_number=6">6</a>&nbsp;<a href="view_all_bug_page.php?page_number=7">7</a>&nbsp;<a href="view_all_bug_page.php?page_number=8">8</a>&nbsp;<a href="view_all_bug_page.php?page_number=9">9</a>&nbsp;<a href="view_all_bug_page.php?page_number=10">10</a>&nbsp;<a href="view_all_bug_page.php?page_number=11">11</a> ...  <a href="view_all_bug_page.php?page_number=2">Suivant</a>  <a href="view_all_bug_page.php?page_number=165">Dernier</a>  ]			</span>
+		</td>
+	</tr>
+</table>
+</form>
+
+<br /><table class="width100" cellspacing="1"><tr><td class="small-caption" width="6%" bgcolor="pink">Nouveau</td><td class="small-caption" width="6%" bgcolor="khaki">Mise en attente</td><td class="small-caption" width="6%" bgcolor="green">Devis livré</td><td class="small-caption" width="6%" bgcolor="blue">Devis validé</td><td class="small-caption" width="6%" bgcolor="darkorange">Validée GDF</td><td class="small-caption" width="6%" bgcolor="magenta">En attente de réponse GDF</td><td class="small-caption" width="6%" bgcolor="mediumpurple">Réponse GDF</td><td class="small-caption" width="6%" bgcolor="slategray">Refusé</td><td class="small-caption" width="6%" bgcolor="moccasin">Accepté</td><td class="small-caption" width="6%" bgcolor="palegoldenrod">En réalisation</td><td class="small-caption" width="6%" bgcolor="yellowgreen">A recetter</td><td class="small-caption" width="6%" bgcolor="chocolate">Recette KO</td><td class="small-caption" width="6%" bgcolor="greenyellow">Recette OK</td><td class="small-caption" width="6%" bgcolor="purple">En attente GO MEP</td><td class="small-caption" width="6%" bgcolor="skyblue">Livré en production</td><td class="small-caption" width="6%" bgcolor="silver">Fermé</td></tr></table>	<br />
+	<hr size="1" />
+<table border="0" width="100%" cellspacing="0" cellpadding="0"><tr valign="top"><td>	<span class="timer"><a href="http://www.mantisbt.org/" title="Free Web Based Bug Tracker">Mantis 1.1.6</a>[<a href="http://www.mantisbt.org/"  title="Free Web Based Bug Tracker" target="_blank">^</a>]</span>
+	<address>Copyright &copy; 2000 - 2008 Mantis Group</address>
+	<address><a href="mailto:conduite-internet-hosting@engie.com">conduite-internet-hosting@engie.com</a></address>
+<span class="italic">Time: 0.501103 seconds.</span><br /></td><td><div align="right"><a href="http://www.mantisbt.org" title="Free Web Based Bug Tracker"><img src="images/mantis_logo_button.gif" width="88" height="35" alt="Powered by Mantis Bugtracker" border="0" /></a></div></td></tr></table></body>
+</html>
