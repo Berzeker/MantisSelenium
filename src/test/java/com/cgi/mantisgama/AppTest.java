@@ -1,4 +1,4 @@
-package com.cgi.moulinette.mantisgama;
+package com.cgi.mantisgama;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
