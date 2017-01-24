@@ -13,17 +13,46 @@ import com.cgi.mantisgama.credentials.Credentials;
 
 public class MantisManagerImpl implements MantisManager {
 
+	private static MantisManager INSTANCE;
+	
 	@Autowired
 	private MantisConfig mantisConfig;
 	
 	@Autowired
 	private SeleniumConfig seleniumConfig;
+	
+	@Autowired
+	private Credentials oktaCredentials;
+	
+	
+	private MantisManagerImpl(SeleniumConfig seleniumConfig, MantisConfig mantisConfig) {
+		this.mantisConfig = mantisConfig;
+		this.seleniumConfig = seleniumConfig;
+	}
+	
+	private MantisManagerImpl(SeleniumConfig seleniumConfig, MantisConfig mantisConfig, Credentials oktaCredentials) {
+		this.mantisConfig = mantisConfig;
+		this.seleniumConfig = seleniumConfig;
+		this.oktaCredentials = oktaCredentials;
+	}
+	
+	public static MantisManager getInstance(SeleniumConfig seleniumConfig, MantisConfig mantisConfig) {
+		if(INSTANCE == null)
+			INSTANCE = new MantisManagerImpl(seleniumConfig, mantisConfig);
+		return INSTANCE;
+	}
 
-	public void openMantisAppli () {
+	public static MantisManager getInstance(SeleniumConfig seleniumConfig, MantisConfig mantisConfig, Credentials oktaCredentials) {
+		if(INSTANCE == null)
+			INSTANCE = new MantisManagerImpl(seleniumConfig, mantisConfig, oktaCredentials);
+		return INSTANCE;
+	}
+
+	public void connectMantisAppli() {
 		seleniumConfig.getDriver().get(mantisConfig.getUrlMantis());
 	}
 	
-	public void openMantisAppli (Credentials oktaCredentials) {
+	public void connectMantisAppliWithOkta() {
 		
 		WebDriver driver = seleniumConfig.getDriver();
 		driver.get(mantisConfig.getUrlMantis());
@@ -41,21 +70,15 @@ public class MantisManagerImpl implements MantisManager {
 		WebElement submitButton = driver.findElement(By.id("signin-button"));
 		submitButton.click();	
 	}
-
-	public MantisManager getInstance(SeleniumConfig seleniumConfig, MantisConfig mantisConfig) {
-		// TODO Auto-generated method stub
-		return null;
+	
+	public MantisShowMantis accessMantisShowTickets() {
+		seleniumConfig.getDriver().get(mantisConfig.getUrlMantisAllTickets());
+		return new MantisShowMantisImpl(mantisConfig, seleniumConfig);
 	}
 
-	public MantisManager getInstance(SeleniumConfig seleniumConfig, MantisConfig mantisConfig,
-			Credentials oktaCredentials) {
-		// TODO Auto-generated method stub
-		return null;
+	public MantisShowDetailsImpl accessMantisDetailsTicket(String idMantis) {
+		seleniumConfig.getDriver().get(mantisConfig.getUrlMantisDetailTicket() + idMantis);
+		return new MantisShowDetailsImpl();
 	}
-	
-	
-
-	
-	
 	
 }

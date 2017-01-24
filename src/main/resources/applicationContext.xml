@@ -6,6 +6,12 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
 
 	<context:annotation-config/>
+	
+	<!-- CREDENTIALS -->
+	<bean name="oktaCredentials" class="com.cgi.mantisgama.credentials.Credentials">
+		<constructor-arg name="login" value="LN5282"/>
+		<constructor-arg name="password" value="Pendragon$120787"/>
+	</bean>
 
 	<!-- CONF SELENIUM -->
 	<bean name="driver" class="org.openqa.selenium.chrome.ChromeDriver"/>
@@ -18,6 +24,17 @@
 	<bean name="mantisConfig" class="com.cgi.mantisgama.config.MantisConfig" factory-method="getInstance">
 		<constructor-arg name="version" value="1.1.6"/>
 		<constructor-arg name="urlMantis" value="https://mantis.engie.com/di"/>
+		<property name="urlMantisAllTickets" value="https://mantis.engie.com/di/view_all_bug_page.php"></property>
+		<property name="urlMantisAllTicketsPagination" value="https://mantis.engie.com/di/view_all_bug_page.php?page_number="></property>
+		<property name="urlMantisDetailTicket" value="https://mantis.engie.com/di/view.php?id="></property>
 	</bean>
+	
+	<!-- CONF API -->
+	<bean name="mantisManager" class="com.cgi.mantisgama.services.MantisManagerImpl" factory-method="getInstance">
+		<constructor-arg name="seleniumConfig" ref="seleniumConfig"/>
+		<constructor-arg name="mantisConfig" ref="mantisConfig"/>
+		<constructor-arg name="oktaCredentials" ref="oktaCredentials"></constructor-arg>
+	</bean>
+	
 
 </beans>

@@ -1,44 +1,40 @@
 package com.cgi.mantisgama.models;
 
-public class MantisData {
+public class MantisAllData {
 
-	private String id;
-	private String resume;
-	private String statut;
+	private MantisGeneralInfo mantisgeneralInfo;
+	
 	private String responsable;
 	private String rapporteur;
-	private String type;
-	private String projet;
-	private String severite;
 	private String dateDebut;
 	private String dateCloture;
 	private String heureDebut;
 	private String heureFin;
 	
-	public MantisData() {}
+	public MantisAllData() {}
 
 	public String getId() {
-		return id;
+		return mantisgeneralInfo.getId();
 	}
 
 	public void setId(String id) {
-		this.id = id;
+		mantisgeneralInfo.setId(id);
 	}
 
 	public String getResume() {
-		return resume;
+		return mantisgeneralInfo.getResume();
 	}
 
 	public void setResume(String resume) {
-		this.resume = resume;
+		mantisgeneralInfo.setResume(resume);
 	}
 
 	public String getStatut() {
-		return statut;
+		return mantisgeneralInfo.getStatut();
 	}
 
 	public void setStatut(String statut) {
-		this.statut = statut;
+		mantisgeneralInfo.setStatut(statut);
 	}
 
 	public String getResponsable() {
@@ -57,28 +53,28 @@ public class MantisData {
 		this.rapporteur = rapporteur;
 	}
 
-	public String getType() {
-		return type;
+	public String getCategorie() {
+		return mantisgeneralInfo.getCategorie();
 	}
 
-	public void setType(String type) {
-		this.type = type;
+	public void setCategorie(String categorie) {
+		mantisgeneralInfo.setCategorie(categorie);
 	}
 
 	public String getProjet() {
-		return projet;
+		return mantisgeneralInfo.getProjet();
 	}
 
 	public void setProjet(String projet) {
-		this.projet = projet;
+		mantisgeneralInfo.setProjet(projet);
 	}
 
 	public String getSeverite() {
-		return severite;
+		return mantisgeneralInfo.getSeverite();
 	}
 
 	public void setSeverite(String severite) {
-		this.severite = severite;
+		mantisgeneralInfo.setSeverite(severite);
 	}
 
 	public String getDateDebut() {
@@ -111,6 +107,14 @@ public class MantisData {
 
 	public void setHeureFin(String heureFin) {
 		this.heureFin = heureFin;
+	}
+
+	public MantisGeneralInfo getMantisgeneralInfo() {
+		return mantisgeneralInfo;
+	}
+
+	public void setMantisgeneralInfo(MantisGeneralInfo mantisgeneralInfo) {
+		this.mantisgeneralInfo = mantisgeneralInfo;
 	}
 	
 	

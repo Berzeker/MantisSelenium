@@ -9,6 +9,7 @@ public class MantisConfig {
 	private String urlMantisHome;
 	private String urlMantisMyView;
 	private String urlMantisAllTickets;
+	private String urlMantisAllTicketsPagination;
 	private String urlMantisCreateTicket;
 	private String urlMantisDetailTicket;
 	private String urlMantisMyAccount;
@@ -96,6 +97,18 @@ public class MantisConfig {
 	public String getUrlMantis() {
 		return urlMantis;
 	}
+
+
+	public String getUrlMantisAllTicketsPagination() {
+		return urlMantisAllTicketsPagination;
+	}
+
+
+	public void setUrlMantisAllTicketsPagination(String urlMantisAllTicketsPagination) {
+		this.urlMantisAllTicketsPagination = urlMantisAllTicketsPagination;
+	}
+	
+	
 
 	
 }
