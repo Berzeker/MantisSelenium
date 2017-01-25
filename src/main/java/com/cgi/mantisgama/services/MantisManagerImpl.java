@@ -76,9 +76,13 @@ public class MantisManagerImpl implements MantisManager {
 		return new MantisShowMantisImpl(mantisConfig, seleniumConfig);
 	}
 
-	public MantisShowDetailsImpl accessMantisDetailsTicket(String idMantis) {
+	public MantisShowDetails accessMantisDetailsTicket(String idMantis) {
 		seleniumConfig.getDriver().get(mantisConfig.getUrlMantisDetailTicket() + idMantis);
-		return new MantisShowDetailsImpl();
+		return MantisShowDetailsImpl.getInstance(seleniumConfig, mantisConfig);
+	}
+
+	public void closeMantisAppli() {
+		seleniumConfig.getDriver().close();		
 	}
 	
 }

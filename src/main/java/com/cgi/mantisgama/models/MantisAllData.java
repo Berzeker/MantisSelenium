@@ -2,87 +2,113 @@ package com.cgi.mantisgama.models;
 
 public class MantisAllData {
 
-	private MantisGeneralInfo mantisgeneralInfo;
-	
-	private String responsable;
-	private String rapporteur;
-	private String dateDebut;
+	private String id;
+	private String project;
+	private String categorie;
+	private String severite;
+	private String reproductibilite;
+	private String dateStart;
+	private String heureStart;
 	private String dateCloture;
-	private String heureDebut;
-	private String heureFin;
+	private String heureCloture;
+	private String dateLastUpdate;		
+	private String reporter;
+	private String assigned;
+	private String priorite;
+	private String etat;
+	private String brique;
+	private String bu;
 	
-	public MantisAllData() {}
-
+	
+	
+	@Override
+	public String toString() {
+		return "MantisAllData [id=" + id + ", project=" + project + ", categorie=" + categorie + ", severite="
+				+ severite + ", reproductibilite=" + reproductibilite + ", dateStart=" + dateStart + ", heureStart="
+				+ heureStart + ", dateCloture=" + dateCloture + ", heureCloture=" + heureCloture + ", dateLastUpdate="
+				+ dateLastUpdate + ", reporter=" + reporter + ", assigned=" + assigned + ", priorite=" + priorite
+				+ ", etat=" + etat + ", brique=" + brique + ", bu=" + bu + "]";
+	}
+	
 	public String getId() {
-		return mantisgeneralInfo.getId();
+		return id;
 	}
-
 	public void setId(String id) {
-		mantisgeneralInfo.setId(id);
+		this.id = id;
 	}
-
-	public String getResume() {
-		return mantisgeneralInfo.getResume();
-	}
-
-	public void setResume(String resume) {
-		mantisgeneralInfo.setResume(resume);
-	}
-
-	public String getStatut() {
-		return mantisgeneralInfo.getStatut();
-	}
-
-	public void setStatut(String statut) {
-		mantisgeneralInfo.setStatut(statut);
-	}
-
-	public String getResponsable() {
-		return responsable;
-	}
-
-	public void setResponsable(String responsable) {
-		this.responsable = responsable;
-	}
-
-	public String getRapporteur() {
-		return rapporteur;
-	}
-
-	public void setRapporteur(String rapporteur) {
-		this.rapporteur = rapporteur;
-	}
-
 	public String getCategorie() {
-		return mantisgeneralInfo.getCategorie();
+		return categorie;
 	}
-
 	public void setCategorie(String categorie) {
-		mantisgeneralInfo.setCategorie(categorie);
+		this.categorie = categorie;
 	}
-
-	public String getProjet() {
-		return mantisgeneralInfo.getProjet();
-	}
-
-	public void setProjet(String projet) {
-		mantisgeneralInfo.setProjet(projet);
-	}
-
 	public String getSeverite() {
-		return mantisgeneralInfo.getSeverite();
+		return severite;
 	}
-
 	public void setSeverite(String severite) {
-		mantisgeneralInfo.setSeverite(severite);
+		this.severite = severite;
+	}
+	public String getReproductibilite() {
+		return reproductibilite;
+	}
+	public void setReproductibilite(String reproductibilite) {
+		this.reproductibilite = reproductibilite;
+	}
+	public String getDateStart() {
+		return dateStart;
+	}
+	public void setDateStart(String dateStart) {
+		this.dateStart = dateStart;
+	}
+	public String getDateLastUpdate() {
+		return dateLastUpdate;
+	}
+	public void setDateLastUpdate(String dateLastUpdate) {
+		this.dateLastUpdate = dateLastUpdate;
+	}
+	public String getReporter() {
+		return reporter;
+	}
+	public void setReporter(String reporter) {
+		this.reporter = reporter;
+	}
+	public String getAssigned() {
+		return assigned;
+	}
+	public void setAssigned(String assigned) {
+		this.assigned = assigned;
+	}
+	public String getPriorite() {
+		return priorite;
+	}
+	public void setPriorite(String priorite) {
+		this.priorite = priorite;
+	}
+	public String getEtat() {
+		return etat;
+	}
+	public void setEtat(String etat) {
+		this.etat = etat;
+	}
+	public String getBrique() {
+		return brique;
+	}
+	public void setBrique(String brique) {
+		this.brique = brique;
+	}
+	public String getBu() {
+		return bu;
+	}
+	public void setBu(String bu) {
+		this.bu = bu;
 	}
 
-	public String getDateDebut() {
-		return dateDebut;
+	public String getHeureStart() {
+		return heureStart;
 	}
 
-	public void setDateDebut(String dateDebut) {
-		this.dateDebut = dateDebut;
+	public void setHeureStart(String heureStart) {
+		this.heureStart = heureStart;
 	}
 
 	public String getDateCloture() {
@@ -93,30 +119,18 @@ public class MantisAllData {
 		this.dateCloture = dateCloture;
 	}
 
-	public String getHeureDebut() {
-		return heureDebut;
+	public String getHeureCloture() {
+		return heureCloture;
 	}
 
-	public void setHeureDebut(String heureDebut) {
-		this.heureDebut = heureDebut;
+	public void setHeureCloture(String heureCloture) {
+		this.heureCloture = heureCloture;
 	}
-
-	public String getHeureFin() {
-		return heureFin;
+	public String getProject() {
+		return project;
 	}
-
-	public void setHeureFin(String heureFin) {
-		this.heureFin = heureFin;
+	public void setProject(String project) {
+		this.project = project;
 	}
-
-	public MantisGeneralInfo getMantisgeneralInfo() {
-		return mantisgeneralInfo;
-	}
-
-	public void setMantisgeneralInfo(MantisGeneralInfo mantisgeneralInfo) {
-		this.mantisgeneralInfo = mantisgeneralInfo;
-	}
-	
-	
 	
 }

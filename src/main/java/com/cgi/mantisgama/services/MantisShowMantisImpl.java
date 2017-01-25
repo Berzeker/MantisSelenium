@@ -91,7 +91,48 @@ public class MantisShowMantisImpl implements MantisShowMantis {
 		return listIdsMantis;
 	}
 	
-	
+	public List<String> getListIdMantisAfterlastUpdate(Date lastUpdateSearch) throws ParseException {
+		
+		List<String> result = new ArrayList<String>();
+		boolean interuptWile = false;
+			
+		seleniumConfig.getDriver().get(mantisConfig.getUrlMantis() + "/view_all_set.php?sort=last_updated&dir=DESC&type=2");
+		int nbrePages =  getNumberPages();
+		
+		int page = 1;
+		while (page <= nbrePages && !interuptWile) {
+			
+			seleniumConfig.getDriver().get(mantisConfig.getUrlMantisAllTicketsPagination() + page);
+			List<WebElement> listTrsMantis = seleniumConfig.getDriver().findElements(By.xpath("//table[@id=\"buglist\"]//tr[@bgcolor]"));
+			
+			for (WebElement trMantis : listTrsMantis) {
+					
+				WebElement lastUpdate = null;
+				Date lastUpdatedate = null;
+				try {
+					lastUpdate = trMantis.findElement(By.xpath("td[9]/span"));
+				} catch (NoSuchElementException e) {
+					lastUpdate = trMantis.findElement(By.xpath("td[9]"));
+				}
+				
+				lastUpdatedate = formatDate.parse(lastUpdate.getText());
+				
+				if (lastUpdateSearch.compareTo(lastUpdatedate) > 0) {
+					interuptWile = true;
+					break;
+				}
+				
+				//ID MANTIS
+				WebElement idmantis = trMantis.findElement(By.xpath("td[4]/a[@href]"));				
+				result.add(idmantis.getText());
+			}
+			page++;
+		}
+		
+		
+		return result;
+	}
+		
 	public List<MantisGeneralInfo> getMantisAfterlastUpdate(Date lastUpdateSearch) {
 		
 		List<MantisGeneralInfo> result = new ArrayList<MantisGeneralInfo>();
@@ -174,20 +215,5 @@ public class MantisShowMantisImpl implements MantisShowMantis {
 		
 		return result;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

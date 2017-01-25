@@ -1,5 +1,6 @@
 package com.cgi.mantisgama.services;
 
+import java.text.ParseException;
 import java.util.Date;
 import java.util.List;
 
@@ -11,5 +12,6 @@ public interface MantisShowMantis {
 	int getNumberTickets();
 	List<String> getListIdMantis();
 	List<MantisGeneralInfo> getMantisAfterlastUpdate(Date lastUpdateSearch);
+	List<String> getListIdMantisAfterlastUpdate(Date lastUpdateSearch) throws ParseException;
 	
 }
