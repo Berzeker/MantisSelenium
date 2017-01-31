@@ -40,7 +40,7 @@ public class App {
 		
 		
 		
-		List<String> listIdsMantis = mantisShowMantis.getListIdMantisAfterlastUpdate(format.parse("23-01-2017"));
+		List<String> listIdsMantis = mantisShowMantis.getListIdMantisAfterlastUpdate(format.parse("26-01-2017"));
 		
 		for (String idMantis : listIdsMantis) {
 			

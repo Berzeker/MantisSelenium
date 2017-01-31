@@ -16,10 +16,9 @@ public class MantisAllData {
 	private String assigned;
 	private String priorite;
 	private String etat;
+	private String resume;
 	private String brique;
 	private String bu;
-	
-	
 	
 	@Override
 	public String toString() {
@@ -27,7 +26,7 @@ public class MantisAllData {
 				+ severite + ", reproductibilite=" + reproductibilite + ", dateStart=" + dateStart + ", heureStart="
 				+ heureStart + ", dateCloture=" + dateCloture + ", heureCloture=" + heureCloture + ", dateLastUpdate="
 				+ dateLastUpdate + ", reporter=" + reporter + ", assigned=" + assigned + ", priorite=" + priorite
-				+ ", etat=" + etat + ", brique=" + brique + ", bu=" + bu + "]";
+				+ ", etat=" + etat + ", resume=" + resume + ", brique=" + brique + ", bu=" + bu + "]";
 	}
 	
 	public String getId() {
@@ -132,5 +131,11 @@ public class MantisAllData {
 	public void setProject(String project) {
 		this.project = project;
 	}
-	
+	public String getResume() {
+		return resume;
+	}
+	public void setResume(String resume) {
+		this.resume = resume;
+	}
+
 }

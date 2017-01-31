@@ -55,6 +55,7 @@ class MantisShowDetailsImpl implements MantisShowDetails {
 		String assigned = getvalueTdsRow(rows1tr, 1, 1);
 		String priorite = getvalueTdsRow(rows2tr, 1, 1);
 		String etat = getvalueTdsRow(rows1tr, 2, 1);
+		String resume = getvalueTdsRow(rows2tr, 2, 1);
 		String brique = getvalueTdsRow(rows1tr, 5, 1);
 		String bu = getvalueTdsRow(rows2tr, 5, 1);
 		String dateCloture = getDateCloture();	
@@ -76,6 +77,7 @@ class MantisShowDetailsImpl implements MantisShowDetails {
 		mantisAllData.setAssigned(assigned);
 		mantisAllData.setPriorite(priorite);
 		mantisAllData.setEtat(etat);
+		mantisAllData.setResume(resume);
 		mantisAllData.setBrique(brique);
 		mantisAllData.setBu(bu);
 		
