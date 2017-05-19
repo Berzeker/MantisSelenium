@@ -95,6 +95,9 @@ public class MantisShowMantisImpl implements MantisShowMantis {
 		
 		List<String> result = new ArrayList<String>();
 		boolean interuptWile = false;
+		
+		String lastUpdateSearchStr = formatDate.format(lastUpdateSearch);
+		Date lastUpdateSearchFormated = formatDate.parse(lastUpdateSearchStr);
 			
 		seleniumConfig.getDriver().get(mantisConfig.getUrlMantis() + "/view_all_set.php?sort=last_updated&dir=DESC&type=2");
 		int nbrePages =  getNumberPages();
@@ -117,7 +120,7 @@ public class MantisShowMantisImpl implements MantisShowMantis {
 				
 				lastUpdatedate = formatDate.parse(lastUpdate.getText());
 				
-				if (lastUpdateSearch.compareTo(lastUpdatedate) > 0) {
+				if (lastUpdateSearchFormated.compareTo(lastUpdatedate) > 0) {
 					interuptWile = true;
 					break;
 				}
@@ -133,10 +136,13 @@ public class MantisShowMantisImpl implements MantisShowMantis {
 		return result;
 	}
 		
-	public List<MantisGeneralInfo> getMantisAfterlastUpdate(Date lastUpdateSearch) {
+	public List<MantisGeneralInfo> getMantisAfterlastUpdate(Date lastUpdateSearch) throws ParseException {
 		
 		List<MantisGeneralInfo> result = new ArrayList<MantisGeneralInfo>();
 		boolean interuptWile = false;
+		
+		String lastUpdateSearchStr = formatDate.format(lastUpdateSearch);
+		Date lastUpdateSearchFormated = formatDate.parse(lastUpdateSearchStr);
 			
 		seleniumConfig.getDriver().get(mantisConfig.getUrlMantis() + "/view_all_set.php?sort=last_updated&dir=DESC&type=2");
 		int nbrePages =  getNumberPages();
@@ -157,17 +163,9 @@ public class MantisShowMantisImpl implements MantisShowMantis {
 				} catch (NoSuchElementException e) {
 					lastUpdate = trMantis.findElement(By.xpath("td[9]"));
 				}
-				
-				
-				try {
-					mantisGeneralInfo.setLastUpdate(formatDate.parse(lastUpdate.getText()));
-				} catch (ParseException e1) {
-					e1.printStackTrace();
-					interuptWile = true;
-					break;
-				}
-				
-				if (lastUpdateSearch.compareTo(mantisGeneralInfo.getLastUpdate()) > 0) {
+								
+				mantisGeneralInfo.setLastUpdate(formatDate.parse(lastUpdate.getText()));
+				if (lastUpdateSearchFormated.compareTo(mantisGeneralInfo.getLastUpdate()) > 0) {
 					interuptWile = true;
 					break;
 				}
