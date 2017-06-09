@@ -150,5 +150,4 @@ class MantisShowDetailsImpl implements MantisShowDetails {
 		}
 		return dateCloture;
 	}
-
 }

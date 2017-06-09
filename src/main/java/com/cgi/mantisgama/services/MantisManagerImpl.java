@@ -55,11 +55,11 @@ public class MantisManagerImpl implements MantisManager {
 	public void connectMantisAppliWithOkta() {
 		
 		WebDriver driver = seleniumConfig.getDriver();
-		driver.get(mantisConfig.getUrlMantis());
+		driver.get(oktaCredentials.getUrl());
 		
-		(new WebDriverWait(driver, 10)).until(new ExpectedCondition<Boolean>() {
+		(new WebDriverWait(driver, 120)).until(new ExpectedCondition<Boolean>() {
             public Boolean apply(WebDriver d) {
-                return d.getTitle().startsWith("ENGIE - Se connecter");
+                return d.getTitle().startsWith("ENGIE - Sign In");
             }
         });
 		
@@ -68,6 +68,15 @@ public class MantisManagerImpl implements MantisManager {
 		WebElement pass = driver.findElement(By.name("password"));
 		pass.sendKeys(oktaCredentials.getPassword());
 		pass.submit();
+		
+		(new WebDriverWait(driver, 120)).until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver d) {
+                return d.getCurrentUrl().contains("UserHome");
+            }
+        });
+		
+		driver.get(mantisConfig.getUrlMantisAllTickets());
+		
 //		WebElement submitButton = driver.findElement(By.id("signin-button"));
 //		submitButton.click();	
 	}
