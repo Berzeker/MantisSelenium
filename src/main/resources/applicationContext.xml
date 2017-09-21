@@ -9,8 +9,8 @@
 	
 	<!-- CREDENTIALS -->
 	<bean name="oktaCredentials" class="com.cgi.mantisgama.credentials.Credentials">
-		<constructor-arg name="login" value="LN5282"/>
-		<constructor-arg name="password" value="Pendragon$120787"/>
+		<constructor-arg name="login" value=""/>
+		<constructor-arg name="password" value=""/>
 	</bean>
 
 	<!-- CONF SELENIUM -->
